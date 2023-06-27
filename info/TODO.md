@@ -29,7 +29,7 @@
  - [ ] user has many pictures
  - [ ] tags has many and belongs to many pictures
   
- - ## Views
+ ## Views
  - [ ] Welcome page: 
    - [ ] navigation 
      - [ ] link to welcome page
@@ -56,7 +56,7 @@
    - [ ] thumbnails
    - [ ] search by tags or username
    - [ ] for logged correspondent user:
-   -   [ ] uppload new image button 
+     - [ ] uppload new image button 
  - [ ] Picture page:
    - [ ] image, full size
    - [ ] username, lin to user's page
