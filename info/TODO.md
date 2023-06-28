@@ -24,17 +24,17 @@
  - [ ] image: CRD, tag/untag, search by tag
  - [ ] tags: CRD 
  
- ## Classes
+## Classes
  - [ ] pictures
  - [ ] user has many pictures
  - [ ] tags has many and belongs to many pictures
   
- ## Views
+## Views
  - [ ] Welcome page: 
    - [ ] navigation 
-     - [ ] link to welcome page
-     - [ ] for unloged visitor: sign up, sign in; 
-     - [ ] for logged user: link to users page, logout
+    - [ ] link to welcome page
+    - [ ] for unloged visitor: sign up, sign in; 
+    - [ ] for logged user: link to users page, logout
    - [ ] picture example, title 
    - [ ] search by tag or username
    - [ ] footer
@@ -56,11 +56,11 @@
    - [ ] thumbnails
    - [ ] search by tags or username
    - [ ] for logged correspondent user:
-     - [ ] uppload new image button 
+    - [ ] uppload new image button 
  - [ ] Picture page:
    - [ ] image, full size
    - [ ] username, lin to user's page
    - [ ] tags
    - [ ] for logged correspondent user:
-     - [ ] delete image button
-     - [ ] add/delete tag ability
+    - [ ] delete image button
+    - [ ] add/delete tag ability
