@@ -11,7 +11,7 @@
 ### Image Management
  - [ ] As a site visitor I want to browse images by tag
  - [ ] As a site visitor I want to browse all images of the particular user
- - [ ] As a visitor I want to see a full-size picture
+ - [ ] As a site visitor I want to see a full-size picture
  - [ ] As a visitor I want to see all tags of the image
  - [ ] As a visitor I want to see a username of the uploader
  - [ ] As a logged user I want to be able to upload new image
@@ -32,11 +32,11 @@
  - [ ] tags has many and belongs to many pictures
   
 ## Views
- - [ ] Welcome page: 
-   - [ ] navigation 
+ - [ ] Navigation on all pages
     - [ ] link to welcome page
     - [ ] for unloged visitor: sign up, sign in; 
     - [ ] for logged user: link to users page, logout
+ - [ ] Welcome page, root 
    - [ ] picture example, title 
    - [ ] search by tag or username
    - [ ] footer
@@ -47,22 +47,20 @@
    - [ ] for unlogged visitors: sign up form
    - [ ] for logged visitors redirection to the welcome page
  - [ ] Tag page:
-   - [ ] navigation
    - [ ] title: tag
    - [ ] thumbnails with username
    - [ ] search by tags or username
    - [ ] footer
  - [ ] User page:
-   - [ ] navigation
    - [ ] title: username
    - [ ] thumbnails
    - [ ] search by tags or username
    - [ ] for logged correspondent user:
-    - [ ] uppload new image button 
+    - [ ] uppload button 
  - [ ] Picture page:
-   - [ ] image, full size
-   - [ ] username, lin to user's page
-   - [ ] tags
+   - [x] image, full size
+   - [ ] username, link to user's page
+   - [x] tags
    - [ ] for logged correspondent user:
     - [ ] delete image button
     - [ ] add/delete tag ability
