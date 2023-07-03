@@ -4,8 +4,8 @@
 
 ### User Management 
 
- - [ ] As a visitor I want create new user account.
- - [ ] As a user I want to log in existing account, having a correct password
+ - [ ] As a visitor I want create a new user account.
+ - [ ] As a user I want to log in its existing account, having a correct password
  - [ ] As a user I want to log out
  
 ### Image Management
@@ -14,7 +14,9 @@
  - [ ] As a visitor I want to see a full-size picture
  - [ ] As a visitor I want to see all tags of the image
  - [ ] As a visitor I want to see a username of the uploader
- 
+ - [ ] As a logged user I want to be able to upload new image
+ - [ ] As a logged user I want to be able to delete my image
+
 ### Tags Managemnt
  - [ ] As a logged user I want to add new or existing tag to my image
  - [ ] As a logged user I want to delete a tag from my image

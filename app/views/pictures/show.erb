@@ -1,0 +1,15 @@
+<div id="picture">
+  <%= image_tag('https://api.example.org/random.gif', id: 'main_pic') %>
+</div>
+
+<div id="tags">
+<% if @picture.tags.empty? %>
+  <p>No tags yet</p>
+<% else %>
+  <% @picture.tags.each do |tag| %>
+    <p id="tag">
+      <%= tag.name %>
+    </p>
+  <% end %>
+<% end %>
+</div>

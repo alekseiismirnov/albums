@@ -25,7 +25,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
-gem "cssbundling-rails"
+# gem "cssbundling-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -47,6 +47,7 @@ gem "bootsnap", require: false
 
 # Bootstrap supprt 
 gem 'bootstrap', '~> 5.2.0'
+
 gem 'sassc-rails'
 gem 'jquery-rails'
 
@@ -60,6 +61,7 @@ group :development, :test do
   gem "rspec-rails"
   gem "factory_bot_rails"
   gem "faker"
+  gem "capybara"
 end
 
 group :development do
@@ -73,3 +75,5 @@ group :development do
   # gem "spring"
 end
 
+
+gem "importmap-rails", "~> 1.2"
