@@ -37,6 +37,7 @@
     - [ ] for unloged visitor: sign up, sign in; 
     - [ ] for logged user: link to users page, logout
  - [ ] Welcome page, root 
+   - [ ] stub
    - [ ] picture example, title 
    - [ ] search by tag or username
    - [ ] footer
