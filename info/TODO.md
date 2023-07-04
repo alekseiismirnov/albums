@@ -33,7 +33,7 @@
   
 ## Views
  - [ ] Navigation on all pages
-    - [ ] link to welcome page
+    - [ ] link to the welcome page
     - [ ] for unloged visitor: sign up, sign in; 
     - [ ] for logged user: link to users page, logout
  - [ ] Welcome page, root 
@@ -61,6 +61,7 @@
    - [x] image, full size
    - [ ] username, link to user's page
    - [x] tags
+   - [ ] every tag is a linke to the tag page
    - [ ] for logged correspondent user:
     - [ ] delete image button
     - [ ] add/delete tag ability
