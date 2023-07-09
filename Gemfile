@@ -77,3 +77,5 @@ end
 
 
 gem "importmap-rails", "~> 1.2"
+
+gem "rubocop", "~> 1.54"
