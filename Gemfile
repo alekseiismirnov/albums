@@ -51,6 +51,7 @@ gem 'bootstrap', '~> 5.2.0'
 gem 'sassc-rails'
 gem 'jquery-rails'
 
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -61,7 +62,6 @@ group :development, :test do
   gem "factory_bot_rails"
   gem "faker"
   gem "capybara"
-  gem "rubocop"
 end
 
 group :development do
@@ -77,5 +77,3 @@ end
 
 
 gem "importmap-rails", "~> 1.2"
-
-gem "devise", "~> 4.9"
