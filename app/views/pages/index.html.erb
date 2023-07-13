@@ -1,1 +1,11 @@
-stub
+
+<% if user_signed_in? %>
+    <p>
+    User: <%= current_user.username %>
+    </p>
+    <%= button_to(
+      'log out',
+      "/users/sign_out",
+      class: 'button button_delete',
+      method: :delete) %>
+<% end %>

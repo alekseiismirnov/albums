@@ -20,16 +20,19 @@
 ### Tags Managemnt
  - [ ] As a logged user I want to add new or existing tag to my image
  - [ ] As a logged user I want to delete a tag from my image
+
+### Design
+ - [ ] Bootstrap styling
   
 ## Functional Spec
- - [ ] users: sign up, sign in, login, logout
+ - [ ] users: sign up, sign in, sign out
  - [ ] image: CRD, tag/untag, search by tag
  - [ ] tags: CRD 
  
 ## Classes
- - [ ] pictures
- - [ ] user has many pictures
- - [ ] tags has many and belongs to many pictures
+ - [x] pictures
+ - [x] user has many pictures
+ - [x] tags has many and belongs to many pictures
   
 ## Views
  - [ ] Navigation on all pages
@@ -37,16 +40,16 @@
     - [ ] for unloged visitor: sign up, sign in; 
     - [ ] for logged user: link to users page, logout
  - [ ] Welcome page, root 
-   - [ ] stub
+   - [x] stub
    - [ ] picture example, title 
    - [ ] search by tag or username
    - [ ] footer
- - [ ] Sign in page
-   - [ ] for unlogged visitors: sign in form
-   - [ ] for logged visitors redirection to the welcome page
- - [ ] Sign up page
-   - [ ] for unlogged visitors: sign up form
-   - [ ] for logged visitors redirection to the welcome page
+ - [x] Sign in page
+   - [x] for unlogged visitors: sign in form
+   - [x] for logged visitors redirection to the welcome page
+ - [x] Sign up page
+   - [x] for unlogged visitors: sign up form
+   - [x] for logged visitors redirection to the welcome page
  - [ ] Tag page:
    - [ ] title: tag
    - [ ] thumbnails with username

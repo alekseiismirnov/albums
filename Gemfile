@@ -81,3 +81,5 @@ gem "importmap-rails", "~> 1.2"
 gem "rubocop", "~> 1.54"
 
 gem "devise", "~> 4.9"
+
+gem "erb_lint", "~> 0.4.0"
