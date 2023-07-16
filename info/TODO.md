@@ -1,4 +1,4 @@
-# Image Hosting
+# Image Hosting Site
 
 ## User Cases
 
