@@ -4,7 +4,7 @@
 
 ### User Management 
 
- - [ ] As a visitor I want create a new user account.
+ - [xs] As a visitor I want create a new user account.
  - [ ] As a user I want to log in its existing account, having a correct password
  - [ ] As a user I want to log out
  
