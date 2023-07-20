@@ -62,6 +62,7 @@ group :development, :test do
   gem "factory_bot_rails"
   gem "faker"
   gem "capybara"
+  gem "launchy", "~> 2.5"
 end
 
 group :development do
@@ -83,3 +84,7 @@ gem "rubocop", "~> 1.54"
 gem "devise", "~> 4.9"
 
 gem "erb_lint", "~> 0.4.0"
+
+
+gem "responders", "~> 3.1"
+

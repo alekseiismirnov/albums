@@ -4,9 +4,9 @@
 
 ### User Management 
 
- - [xs] As a visitor I want create a new user account.
- - [ ] As a user I want to log in its existing account, having a correct password
- - [ ] As a user I want to log out
+ - [x] As a visitor I want create a new user account.
+ - [x] As a user I want to sign in its existing account, having a correct password
+ - [x] As a logged user I want to sign out
  
 ### Image Management
  - [ ] As a site visitor I want to browse images by tag
@@ -25,7 +25,7 @@
  - [ ] Bootstrap styling
   
 ## Functional Spec
- - [ ] users: sign up, sign in, sign out
+ - [x] users: sign up, sign in, sign out
  - [ ] image: CRD, tag/untag, search by tag
  - [ ] tags: CRD 
  
@@ -35,10 +35,10 @@
  - [x] tags has many and belongs to many pictures
   
 ## Views
- - [ ] Navigation on all pages
-    - [ ] link to welcome page
-    - [ ] for unloged visitor: sign up, sign in; 
-    - [ ] for logged user: link to users page, logout
+ - [x] Navigation on all pages
+    - [x] link to welcome page
+    - [x] for unloged visitor: sign up, sign in; 
+    - [x] for logged user: link to user's page, logout
  - [ ] Welcome page, root 
    - [x] stub
    - [ ] picture example, title 
