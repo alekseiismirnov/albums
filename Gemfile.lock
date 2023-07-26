@@ -272,6 +272,9 @@ GEM
       sprockets-rails
       tilt
     smart_properties (1.17.0)
+    spring (4.1.1)
+    spring-commands-rspec (1.0.4)
+      spring (>= 0.9.1)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -330,6 +333,8 @@ DEPENDENCIES
   rspec-rails
   rubocop (~> 1.54)
   sassc-rails
+  spring
+  spring-commands-rspec
   sprockets-rails
   stimulus-rails
   turbo-rails
