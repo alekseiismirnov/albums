@@ -1,0 +1,15 @@
+<div class="listed_picture">
+  <div id="picture">
+    <%= image_tag(picture.url, id: 'main_pic') %>
+  </div>
+
+  <div id="tags">
+    <% if picture.tags.empty? %>
+      <p>No tags yet</p>
+    <% else %>
+      <% picture.tags.each do |tag| %>
+        <span id="tag"> <%= tag.name %> </span>
+      <% end %>
+    <% end %>
+  </div>
+</div>

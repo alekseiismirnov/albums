@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   devise_for :users
   resources :pictures
   resources :users, only: [:show]
+  resources :tags
   get 'pages/:page' => 'pages#show'
 end

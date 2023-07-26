@@ -88,3 +88,5 @@ gem "erb_lint", "~> 0.4.0"
 
 gem "responders", "~> 3.1"
 
+
+gem "pry-rails", "~> 0.3.9"

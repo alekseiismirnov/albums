@@ -31,6 +31,7 @@ feature 'navigation bar' do
     it 'has a sighn out ling and no sign up/in ones' do
       within '.navbar' do
         expect(page).to have_link 'Albums', href: root_path
+        expect(page).to have_link 'Tags', href: tags_path
         expect(page).not_to have_link 'Sign Up'
         expect(page).not_to have_link 'Sign In'
         expect(page).to have_link @user.username, href: user_path(@user)

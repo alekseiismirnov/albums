@@ -9,7 +9,7 @@
  - [x] As a logged user I want to sign out
  
 ### Image Management
- - [ ] As a site visitor I want to browse images by tag
+ - [x] As a site visitor I want to browse images by tag
  - [ ] As a site visitor I want to browse all images of the particular user
  - [ ] As a site visitor I want to see a full-size picture
  - [ ] As a visitor I want to see all tags of the image
@@ -26,8 +26,8 @@
   
 ## Functional Spec
  - [x] users: sign up, sign in, sign out
- - [ ] image: CRD, tag/untag, search by tag
- - [ ] tags: CRD 
+ - [ ] image: CRUD, tag/untag, search by tag
+ - [ ] tags: CRUD 
  
 ## Classes
  - [x] pictures
@@ -54,7 +54,6 @@
    - [ ] title: tag
    - [ ] thumbnails with username
    - [ ] search by tags or username
-   - [ ] footer
  - [ ] User page:
    - [ ] title: username
    - [ ] thumbnails
