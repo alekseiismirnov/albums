@@ -2,6 +2,7 @@ require 'rails_helper'
 
 feature 'navigation bar' do
   before :all do
+    User.delete_all
     @user = create(:user)
   end
 
