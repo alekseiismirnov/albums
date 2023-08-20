@@ -9,7 +9,7 @@ feature 'site visitor cat create a user account' do
     sign_out :user
   end
 
-  it 'can proceed to the registration form and create an account' do
+  it 'can proceed to the registration form and create an account', type: :system  do
     visit root_path
     within '.navbar' do
       click_on 'Sign Up'

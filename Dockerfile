@@ -28,6 +28,8 @@ WORKDIR /app/albums
 RUN yarn install && \
     gem install rails -v 7.0.3.1
 
+ADD Gemfile .
+ADD Guardfile .
 ADD rails_project_setup.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/rails_project_setup.sh
 ENTRYPOINT ["/usr/local/bin/rails_project_setup.sh"]

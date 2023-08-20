@@ -5,7 +5,7 @@ feature 'individual picture view' do
     @picture = create(:picture)
   end
 
-  it 'should contain image, uploader nickname, tags' do
+  it 'should contain image, uploader nickname, tags', type: :system  do
     visit picture_path(@picture)
     expect(page).to have_http_status(:success)
     within('#tags') do

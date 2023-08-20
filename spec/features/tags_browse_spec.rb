@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'user can select pictures by the tag' do
+feature 'user can select pictures by the tag'do
   before :all do
     Tag.delete_all
     create_list(:tag, 10)
@@ -11,11 +11,10 @@ feature 'user can select pictures by the tag' do
     @tagged = [Picture.first, Picture.last]
   end
 
-  scenario 'from the tags list' do
+  scenario 'from the tags list', type: :system do
     visit root_path
     click_on 'Tags'
     click_on @tag_name
-    save_page
     images_urls = all('#main_pic').pluck(:src)
     expect(images_urls).to match_array @tagged.map(&:url)
   end

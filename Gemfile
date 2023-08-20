@@ -65,6 +65,7 @@ group :development, :test do
   gem "factory_bot_rails"
   gem "faker"
   gem "capybara"
+  gem "selenium-webdriver", "=4.10.0"
   gem "launchy", "~> 2.5"
 end
 
@@ -80,7 +81,6 @@ group :development do
   gem 'spring-commands-rspec'
 end
 
-
 gem "importmap-rails", "~> 1.2"
 
 gem "rubocop", "~> 1.54"
@@ -94,3 +94,5 @@ gem "responders", "~> 3.1"
 
 
 gem "pry-rails", "~> 0.3.9"
+
+gem "webrick", "~> 1.8"

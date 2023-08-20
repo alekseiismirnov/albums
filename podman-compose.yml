@@ -7,17 +7,33 @@ services:
     volumes:
       - "dbdata:/var/lib/postgresql/data"
 
+  chrome:
+# https://www.plymouthsoftware.com/articles/rails-on-docker-system-specs-in-containers-with-rspec-capybara-chrome-and-selenium/
+# To see what is happening inside the container, head to http://localhost:7900/?autoconnect=1&resize=scale&password=secret.
+    image: selenium/standalone-chrome:4.10.0 # version same as the selentium-webdriver
+    ports:
+      - "4444:4444"
+      - "7900:7900"
+    volumes:
+      - /dev/shm:/dev/shm
+
   web:
     build: .
-    ports:
-      - "3000:3000"
     depends_on:
       - db
+      - chrome
     environment:
+      - TERMINFO=/etc/terminfo
+      - TERM=xterm-256color
       - PGHOST=db
       - PGUSER=postgres
       - PGPASSWORD=password
+      - SELENIUM_HOST=chrome
+      - APP_HOST=web
+    ports:
+     - "3000:3000"
     volumes:
       - .:/app/albums:Z
+
 volumes:
   dbdata:

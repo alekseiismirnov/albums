@@ -61,4 +61,7 @@ Rails.application.configure do
 
   # spring requirement
   config.enable_reloading = true
+
+
+  config.hosts << 'web'
 end
