@@ -4,7 +4,4 @@ class Picture < ApplicationRecord
   has_and_belongs_to_many :tags
 
   has_one_attached :file
-  def url
-    file.url
-  end
 end
