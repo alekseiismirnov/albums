@@ -14,5 +14,6 @@ feature 'picture upload' do
     end
 
     attach_file("Upload New Picture", Rails.root + "spec/fixtures/stub.jpg")
+    click_button "Upload!"
   end
 end
