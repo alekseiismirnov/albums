@@ -1,5 +1,12 @@
 # Image Hosting Site
 
+## Issues
+
+- [x] Redudant 'Picture@url'
+  - [x] Remove from `pictures` table
+  - [x] Fix tests, models generators actually
+  - [x] Fix views
+
 ## User Cases
 
 ### User Management 
@@ -14,7 +21,7 @@
  - [ ] As a site visitor I want to see a full-size picture
  - [ ] As a visitor I want to see all tags of the image
  - [ ] As a visitor I want to see a username of the uploader
- - [ ] As a logged user I want to be able to upload new image
+ - [x] As a logged user I want to be able to upload new image
  - [ ] As a logged user I want to be able to delete my image
 
 ### Tags Managemnt
@@ -55,11 +62,11 @@
    - [ ] thumbnails with username
    - [ ] search by tags or username
  - [ ] User page:
-   - [ ] title: username
+   - [x] title: username
    - [ ] thumbnails
    - [ ] search by tags or username
    - [ ] for logged correspondent user:
-    - [ ] uppload button 
+    - [x] uppload button 
  - [ ] Picture page:
    - [x] image, full size
    - [ ] username, link to user's page

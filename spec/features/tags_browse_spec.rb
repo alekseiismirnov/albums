@@ -13,9 +13,10 @@ feature 'user can select pictures by the tag'do
 
   scenario 'from the tags list', type: :system do
     visit root_path
+
     click_on 'Tags'
     click_on @tag_name
-    images_urls = all('#main_pic').pluck(:src)
-    expect(images_urls).to match_array @tagged.map(&:url)
+    images = all('#main_pic').count
+    expect(images).to eq @tagged.count
   end
 end
