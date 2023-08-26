@@ -1,2 +1,6 @@
-<label for='pic_upload'>Upload New Picture</label>
-<input id="pic_upload" name="pic_upload" type="file" data-direct-upload-url="<%= rails_direct_uploads_url %>" />
+<%= form_with model: Picture do |f| %>
+
+<%= f.label :file, 'New Picture' %>
+<%= f.file_field :file %>
+<%= f.submit 'Upload!' %>
+<% end %>

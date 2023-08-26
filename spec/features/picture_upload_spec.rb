@@ -13,7 +13,11 @@ feature 'picture upload' do
       click_on @user.username
     end
 
-    attach_file("Upload New Picture", Rails.root + "spec/fixtures/stub.jpg")
+    pictures_number = @user.pictures.count 
+    attach_file("New Picture", Rails.root + "spec/fixtures/stub.jpg")
     click_button "Upload!"
-  end
+
+    expect(@user.pictures.count).to eq (pictures_number + 1)
+
+    end
 end

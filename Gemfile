@@ -67,6 +67,7 @@ group :development, :test do
   gem "capybara"
   gem "selenium-webdriver", "=4.10.0"
   gem "launchy", "~> 2.5"
+  gem "prettyprint"
 end
 
 group :development do
