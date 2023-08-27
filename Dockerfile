@@ -21,6 +21,7 @@ RUN apk update && \
   imagemagick \
   git \
   tzdata \
+  vips \
   && rm -rf /var/cache/apk/* 
 
 WORKDIR /app/albums

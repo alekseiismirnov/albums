@@ -20,7 +20,7 @@
  - [ ] As a site visitor I want to browse all images of the particular user
  - [ ] As a site visitor I want to see a full-size picture
  - [ ] As a visitor I want to see all tags of the image
- - [ ] As a visitor I want to see a username of the uploader
+ - [x] As a visitor I want to see a username of the uploader
  - [x] As a logged user I want to be able to upload new image
  - [ ] As a logged user I want to be able to delete my image
 

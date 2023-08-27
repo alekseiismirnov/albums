@@ -1,5 +1,5 @@
 class PicturesController < ApplicationController
-  before_action :authenticate_user!, :only => [:create]
+  before_action :authenticate_user!, :only => [:create, :destroy]
 
   def show
     @picture = Picture.find(params[:id])
@@ -7,7 +7,13 @@ class PicturesController < ApplicationController
 
   def create
     pic = current_user.pictures.create!(picture_params)
+  end
 
+  def destroy
+    picture = Picture.find(params[:id])
+    picture.file.purge
+    picture.destroy
+    redirect_to user_path(current_user)
   end
 
   def picture_params
