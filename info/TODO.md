@@ -6,6 +6,7 @@
   - [x] Remove from `pictures` table
   - [x] Fix tests, models generators actually
   - [x] Fix views
+- [ ] `Couldn't find User with 'id'=sign_out` when click on 'Sign out' at nav.
 
 ## User Cases
 
