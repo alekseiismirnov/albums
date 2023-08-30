@@ -19,9 +19,16 @@ feature 'picture delete' do
 
   end
 
-  scenario 'logged user do not see Delete button for others picture', type: :system do 
+  scenario 'logged user does not see Delete button for others picture', type: :system do 
     @another_user = create(:user)
     sign_in @another_user
+
+    visit picture_path @picture
+    expect(page).to have_no_button 'Delete!'
+  end
+ 
+  scenario 'not-logged visitor does not see Delete button', type: :system do 
+    sign_out @user
 
     visit picture_path @picture
     expect(page).to have_no_button 'Delete!'
