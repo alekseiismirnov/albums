@@ -88,6 +88,8 @@ gem "rubocop", "~> 1.54"
 
 gem "devise", "~> 4.9"
 
+gem "cancancan", "~> 3.5"
+
 gem "erb_lint", "~> 0.4.0"
 
 
