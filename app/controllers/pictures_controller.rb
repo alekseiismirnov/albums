@@ -2,7 +2,8 @@ class PicturesController < ApplicationController
   before_action :authenticate_user!, :only => [:create, :destroy]
 
   def show
-    @picture = Picture.find(params[:id])
+    #user_not_authorized unless can? :show, @picture
+    @picture = Picture.find(params[:id]) 
   end
 
   def create

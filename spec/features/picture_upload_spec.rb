@@ -3,6 +3,9 @@ require 'rails_helper'
 feature 'picture upload' do
   before :all do
     User.delete_all
+    Picture.delete_all
+    ActiveStorage::Attachment.all.each { |attachment| attachment.purge }
+
     @user = create(:user, username: 'yR1eQJERMVh')
     sign_in @user
   end
@@ -15,6 +18,7 @@ feature 'picture upload' do
 
     pictures_number = @user.pictures.count 
     attach_file("New Picture", Rails.root + "spec/fixtures/stub.jpg")
+
     click_button "Upload!"
 
     expect(@user.pictures.count).to eq (pictures_number + 1)

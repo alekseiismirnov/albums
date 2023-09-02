@@ -12,7 +12,7 @@
     </p>
   <% end %>
 <% end %>
-<% if current_user == @picture.user %>
+<% if can? :destroy, @picture %>
   <%= button_to 'Delete!', @picture, method: 'delete' %>
 <% end %>
 </div>
