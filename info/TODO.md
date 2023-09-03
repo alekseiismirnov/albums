@@ -6,7 +6,15 @@
   - [x] Remove from `pictures` table
   - [x] Fix tests, models generators actually
   - [x] Fix views
-- [ ] `Couldn't find User with 'id'=sign_out` when click on 'Sign out' at nav.
+- [x] Couldn't find User with 'id'=sign_out` when click on 'Sign out' at nav. - https://github.com/heartcombo/devise/wiki/How-To:-Add-sign_in,-sign_out,-and-sign_up-links-to-your-layout-template
+
+## Security
+
+Next provided via `cancancan`, no idea yet how to test it:
+  - [ ] User can delete only his upploads
+  - [ ] User can tag only his upploads
+  - [ ] Only logged user can upload 
+
 
 ## User Cases
 
@@ -29,7 +37,7 @@
  - [ ] As a logged user I want to add new or existing tag to my image
  - [ ] As a logged user I want to delete a tag from my image
 
-### Design
+## Visual Design
  - [ ] Bootstrap styling
   
 ## Functional Spec
