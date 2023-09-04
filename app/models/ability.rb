@@ -8,8 +8,6 @@ class Ability
 
     return unless user.present?
     
-    can :update, Picture, user: user
-    can :destroy, Picture, user: user
-    can :create, Picture, user: user
+    can [:update, :destroy, :create], Picture, user: user
   end
 end

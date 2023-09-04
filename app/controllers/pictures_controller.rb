@@ -1,6 +1,6 @@
 class PicturesController < ApplicationController
   before_action :authenticate_user!, :only => [:create, :destroy]
-  before_action :load_picture, except: [:create]
+  load_and_authorize_resource
 
   def show ; end
 
@@ -18,9 +18,5 @@ class PicturesController < ApplicationController
 
   def picture_params
     params.require(:picture).permit(:file)
-  end
-
-  def load_picture
-    @picture = Picture.find(params[:id])
   end
 end

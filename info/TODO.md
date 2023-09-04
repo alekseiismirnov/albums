@@ -10,10 +10,11 @@
 
 ## Security
 
-Next provided via `cancancan`, no idea yet how to test it:
-  - [ ] User can delete only his upploads
-  - [ ] User can tag only his upploads
-  - [ ] Only logged user can upload 
+Next provided via the `cancancan`:
+  - [x] Tests https://github.com/CanCanCommunity/cancancan/blob/develop/docs/testing.md
+  - [x] User can delete only his upploads
+  - [x] User can tag only his upploads
+  - [x] Only logged user can upload 
 
 
 ## User Cases
