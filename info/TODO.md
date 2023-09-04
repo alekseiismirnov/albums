@@ -7,14 +7,17 @@
   - [x] Fix tests, models generators actually
   - [x] Fix views
 - [x] Couldn't find User with 'id'=sign_out` when click on 'Sign out' at nav. - https://github.com/heartcombo/devise/wiki/How-To:-Add-sign_in,-sign_out,-and-sign_up-links-to-your-layout-template
+- [ ] Ensure to delete attachment deleting a pictures
+- [ ] Newly uploaded image doesn't seen on user page without page reload
 
 ## Security
 
 Next provided via the `cancancan`:
   - [x] Tests https://github.com/CanCanCommunity/cancancan/blob/develop/docs/testing.md
   - [x] User can delete only his upploads
-  - [x] User can tag only his upploads
+  - [ ] User can tag only his upploads
   - [x] Only logged user can upload 
+  - [ ] https://guides.rubyonrails.org/active_storage_overview.html#authenticated-controllers
 
 
 ## User Cases
@@ -27,12 +30,13 @@ Next provided via the `cancancan`:
  
 ### Image Management
  - [x] As a site visitor I want to browse images by tag
- - [ ] As a site visitor I want to browse all images of the particular user
- - [ ] As a site visitor I want to see a full-size picture
- - [ ] As a visitor I want to see all tags of the image
+ - [x] As a site visitor I want to browse all images of the particular user
+ - [x] As a site visitor I want to see a full-size picture
+ - [x] As a visitor I want to see all tags of the image
  - [x] As a visitor I want to see a username of the uploader
  - [x] As a logged user I want to be able to upload new image
- - [ ] As a logged user I want to be able to delete my image
+ - [x] As a logged user I want to be able to delete my image
+ - [ ] As a logged user owning the image I want to create and delete its tags
 
 ### Tags Managemnt
  - [ ] As a logged user I want to add new or existing tag to my image
@@ -67,20 +71,20 @@ Next provided via the `cancancan`:
  - [x] Sign up page
    - [x] for unlogged visitors: sign up form
    - [x] for logged visitors redirection to the welcome page
- - [ ] Tag page:
+ - [x] Tag page:
    - [ ] title: tag
    - [ ] thumbnails with username
    - [ ] search by tags or username
- - [ ] User page:
-   - [x] title: username
-   - [ ] thumbnails
+ - [x] User page:
+   - [ ] title: username
+   - [x] thumbnails
    - [ ] search by tags or username
-   - [ ] for logged correspondent user:
+   - [x] for logged correspondent user:
     - [x] uppload button 
  - [ ] Picture page:
    - [x] image, full size
-   - [ ] username, link to user's page
+   - [x] username, link to user's page
    - [x] tags
    - [ ] for logged correspondent user:
-    - [ ] delete image button
+    - [x] delete image button
     - [ ] add/delete tag ability

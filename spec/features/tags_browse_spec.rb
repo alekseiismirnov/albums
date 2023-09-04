@@ -2,8 +2,11 @@ require 'rails_helper'
 
 feature 'user can select pictures by the tag'do
   before :all do
+    Picture.delete_all
+    ActiveStorage::Attachment.all.each { |attachment| attachment.purge }
     Tag.delete_all
     create_list(:tag, 10)
+    create_list(:picture, 15)
     @tag_name = 'Blrxekib9Vo'
     tag = create(:tag, name: @tag_name)
     Picture.first.tags << tag

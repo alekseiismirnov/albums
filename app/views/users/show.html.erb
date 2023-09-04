@@ -1,6 +1,9 @@
-<%= form_with model: Picture do |f| %>
+<div class="pictures_list">
+  <%= render(partial: 'shared/listed_picture', collection: @user.pictures, as: :picture) || 'No pictures yet' %>
+</div>
 
-<%= f.label :file, 'New Picture' %>
-<%= f.file_field :file %>
-<%= f.submit 'Upload!', data: { disable_with: "Upploading yet..." }%>
+<%= form_with model: Picture do |f| %>
+  <%= f.label :file, 'New Picture' %>
+  <%= f.file_field :file %>
+  <%= f.submit 'Upload!', data: { disable_with: "Upploading yet..." }%>
 <% end %>

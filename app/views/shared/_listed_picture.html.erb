@@ -1,6 +1,8 @@
 <div class="listed_picture">
   <div id="picture">
-    <%= image_tag picture, id: 'main_pic' %>
+    <%= link_to picture_path picture do %>
+      <%= image_tag picture.file.representation(resize_to_limit: [200, 200]), id: 'main_pic' %>
+    <% end %>
   </div>
 
   <div id="tags">
