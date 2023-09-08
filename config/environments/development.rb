@@ -70,4 +70,5 @@ Rails.application.configure do
 
 
   config.hosts << 'web'
+  config.sass.inline_source_maps = true
 end

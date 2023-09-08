@@ -7,6 +7,7 @@ echo "*** Rails Project Setup ***"
 /app/albums/bin/rails importmap:install
 /app/albums/bin/rails turbo:install stimulus:install
 /app/albums/bin/bundle exec spring binstub rspec
+/app/albums/bin/rails css:install:bootstrap 
 
 rm -fr /app/albums/tmp/pids/server.pid
 /app/albums/bin/rails s -b 0.0.0.0

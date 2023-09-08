@@ -9,6 +9,11 @@
 - [x] Couldn't find User with 'id'=sign_out` when click on 'Sign out' at nav. - https://github.com/heartcombo/devise/wiki/How-To:-Add-sign_in,-sign_out,-and-sign_up-links-to-your-layout-template
 - [ ] Ensure to delete attachment deleting a pictures
 - [ ] Newly uploaded image doesn't seen on user page without page reload
+- [ ] Install Bootstrap
+  - [ ] https://mixandgo.com/learn/ruby-on-rails/how-to-install-bootstrap
+  - [ ] https://github.com/rails/importmap-rails/
+  - [x] https://bootrails.com/blog/rails-7-bootstrap-5-tutorial/
+  - [ ] https://jasonfleetwoodboldt.com/courses/rails-7-crash-course/rails-7-importmap-rails-with-bootstrap-stimulus-turbo-long-tutorial/
 
 ## Security
 
