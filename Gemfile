@@ -97,3 +97,5 @@ gem "responders", "~> 3.1"
 gem "pry-rails", "~> 0.3.9"
 
 gem "webrick", "~> 1.8"
+
+gem "font-awesome-sass", "~> 6.4"

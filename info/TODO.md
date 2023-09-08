@@ -2,18 +2,16 @@
 
 ## Issues
 
+- [ ] Ensure to delete attachment deleting a pictures
+- [ ] Newly uploaded image doesn't seen on user page without page reload.  Redirect to pic show page?
 - [x] Redudant 'Picture@url'
   - [x] Remove from `pictures` table
   - [x] Fix tests, models generators actually
   - [x] Fix views
 - [x] Couldn't find User with 'id'=sign_out` when click on 'Sign out' at nav. - https://github.com/heartcombo/devise/wiki/How-To:-Add-sign_in,-sign_out,-and-sign_up-links-to-your-layout-template
-- [ ] Ensure to delete attachment deleting a pictures
-- [ ] Newly uploaded image doesn't seen on user page without page reload
-- [ ] Install Bootstrap
-  - [ ] https://mixandgo.com/learn/ruby-on-rails/how-to-install-bootstrap
-  - [ ] https://github.com/rails/importmap-rails/
+- [x] Install Bootstrap
   - [x] https://bootrails.com/blog/rails-7-bootstrap-5-tutorial/
-  - [ ] https://jasonfleetwoodboldt.com/courses/rails-7-crash-course/rails-7-importmap-rails-with-bootstrap-stimulus-turbo-long-tutorial/
+  - [x] https://jasonfleetwoodboldt.com/courses/rails-7-crash-course/rails-7-importmap-rails-with-bootstrap-stimulus-turbo-long-tutorial/
 
 ## Security
 
@@ -49,6 +47,13 @@ Next provided via the `cancancan`:
 
 ## Visual Design
  - [ ] Bootstrap styling
+   - [ ] get desighn
+   - [ ] navbar
+   - [ ] fix pages
+      - [ ] Landing
+      - [ ] Pic show
+      - [ ] Tags list and show
+      - [ ] Userpage
   
 ## Functional Spec
  - [x] users: sign up, sign in, sign out

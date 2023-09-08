@@ -130,6 +130,8 @@ GEM
     faker (3.2.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
+    font-awesome-sass (6.4.2)
+      sassc (~> 2.0)
     formatador (1.1.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -367,6 +369,7 @@ DEPENDENCIES
   erb_lint (~> 0.4.0)
   factory_bot_rails
   faker
+  font-awesome-sass (~> 6.4)
   guard
   guard-rspec
   image_processing (~> 1.2)
