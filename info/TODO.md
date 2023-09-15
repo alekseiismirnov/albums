@@ -1,9 +1,14 @@
 # Image Hosting Site
 
 ## Issues
-
-- [ ] Ensure to delete attachment deleting a pictures
+- [x] Ensure to delete attachment deleting a picture.  Use `destroy`.
 - [ ] Newly uploaded image doesn't seen on user page without page reload.  Redirect to pic show page?
+- [ ] No link on user page from the picture view.
+- [ ] Multiply 'No tags yet' on the pics list look annoing.
+- [ ] Picture upload w/o validators.
+- [ ] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
+
+- [x] 'rails_project_setup.sh' wipes out 'importmap.rb','application.js', and perhaps something else. Almost.  Seems it is that 'bin/rails *:install'.  'config/initializers/assets.rb' not affected.  
 - [x] Redudant 'Picture@url'
   - [x] Remove from `pictures` table
   - [x] Fix tests, models generators actually
@@ -47,9 +52,11 @@ Next provided via the `cancancan`:
 
 ## Visual Design
  - [ ] Bootstrap styling
-   - [ ] get desighn
-   - [ ] navbar
-   - [ ] fix pages
+   - [ ] https://www.youtube.com/watch?v=iJKCj8uAHz8 00:54
+   - [ ] https://bootrails.com/blog/rails-bootstrap-custom-theme/
+   - [ ] Design actually
+   - [ ] Navbar
+   - [ ] Fix pages:
       - [ ] Landing
       - [ ] Pic show
       - [ ] Tags list and show

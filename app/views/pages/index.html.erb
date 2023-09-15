@@ -1,15 +1,32 @@
 
-<% if user_signed_in? %>
-    <p>
-    User: <%= current_user.username %>
-    </p>
-    <%= button_to(
-      'log out',
-      "/users/sign_out",
-      class: 'button button_delete',
-      method: :delete) %>
-<% end %>
 
-<%= icon('fa-solid', 'user-secret', class:"fa-7x, fa-shake")%>
-<%= icon('fa-brands', 'font-awesome', 'Font Awesome', id: 'my-icon', class: 'fa-shake')%>
-<%= icon('fab', 'font-awesome', 'Font Awesome', id: 'my-icon', class: 'fa-beat')%>
+<section id="home" class="intro-section">
+  <div clas="container">
+    <div class="row align-items-center text-white">
+      <div class="col-md-6 intros">
+        <h1 class="intro">
+          <span class="display2--intro">
+            Albums
+          </span>
+          <span class="display2--description lh-base">
+           the image hosting service
+          </span>
+        </h1>
+        <button type="button" class="rounded-pill btn-rounded"> Upload one 
+        <span>
+          <%= icon('fa-solid', 'upload') %>
+        </span>
+      </button>
+      </div>
+      <div class="col-md-6 intros">
+        <div class="videobox">
+        <% if @picture %>
+          <%= image_tag @picture.file, id: 'rescently uploaded' %>
+        <% else %>
+          <%= image_tag "stub.jpg", id: 'rescently uploaded' %>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
