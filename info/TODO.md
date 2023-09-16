@@ -1,13 +1,14 @@
 # Image Hosting Site
 
 ## Issues
-- [x] Ensure to delete attachment deleting a picture.  Use `destroy`.
+
 - [ ] Newly uploaded image doesn't seen on user page without page reload.  Redirect to pic show page?
 - [ ] No link on user page from the picture view.
 - [ ] Multiply 'No tags yet' on the pics list look annoing.
 - [ ] Picture upload w/o validators.
 - [ ] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
-
+- [ ] Remove the 'Sign Up' link from the navbar
+- [x] Ensure to delete attachment deleting a picture.  Use `destroy`.
 - [x] 'rails_project_setup.sh' wipes out 'importmap.rb','application.js', and perhaps something else. Almost.  Seems it is that 'bin/rails *:install'.  'config/initializers/assets.rb' not affected.  
 - [x] Redudant 'Picture@url'
   - [x] Remove from `pictures` table
