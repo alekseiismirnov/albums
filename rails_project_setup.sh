@@ -5,7 +5,8 @@ echo "*** Rails Project Setup ***"
 /app/albums/bin/rails db:prepare
 /app/albums/bin/bundle exec spring binstub rspec
 /app/albums/bin/rails css:install:bootstrap 
-/app/albums/bin/importmap pin glightbox
+bin/importmap pin bootstrap --download 
+/app/albums/bin/importmap pin glightbox --download
 }
 
 rm -fr /app/albums/tmp/pids/server.pid
