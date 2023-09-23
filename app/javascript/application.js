@@ -1,5 +1,5 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-
+import * as bootstrap from 'bootstrap';
 import GLightbox from 'glightbox';
 
 const lightbox = GLightbox({
@@ -8,3 +8,4 @@ const lightbox = GLightbox({
   'source': 'youtube', 
   'width': 900,
 });
+
