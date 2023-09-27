@@ -17,6 +17,7 @@
   - [x] Fix views
 - [x] Couldn't find User with 'id'=sign_out` when click on 'Sign out' at nav. - https://github.com/heartcombo/devise/wiki/How-To:-Add-sign_in,-sign_out,-and-sign_up-links-to-your-layout-template
 - [x] Install Bootstrap
+  - [x] https://eagerworks.com/blog/import-maps-in-rails-7
   - [x] https://bootrails.com/blog/rails-7-bootstrap-5-tutorial/
   - [x] https://jasonfleetwoodboldt.com/courses/rails-7-crash-course/rails-7-importmap-rails-with-bootstrap-stimulus-turbo-long-tutorial/
 
