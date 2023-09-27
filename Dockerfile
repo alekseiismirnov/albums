@@ -26,8 +26,7 @@ RUN apk update && \
 
 WORKDIR /app/albums
 
-RUN yarn install && \
-    gem install rails -v 7.0.3.1
+RUN gem install rails -v 7.0.3.1
 
 ADD Gemfile .
 ADD Guardfile .

@@ -1,6 +1,9 @@
 #!/bin/sh
 echo "*** Rails Project Setup ***"
- ! [ -x /app/albums/bin/rails ] && { rails new /app/albums -d postgresql -T -s -c bootstrap --skip-git
+ ! [ -x /app/albums/bin/rails ] && { echo '***'
+echo '*** app does not exist yet'
+echo '***'
+rails new /app/albums -d postgresql -T -s -c bootstrap --skip-git
 /app/albums/bin/bundle install
 /app/albums/bin/rails db:prepare
 /app/albums/bin/bundle exec spring binstub rspec
