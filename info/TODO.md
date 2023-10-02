@@ -12,7 +12,7 @@
 - [x] Navbar overlaps and blocks upper part of the page.
 - [x] Add glightbox https://www.csalmeida.com/log/managing-js-and-css-assets-in-rails-7/
 - [x] Ensure to delete attachment deleting a picture.  Use `destroy`.
-- [x] 'rails_project_setup.sh' wipes out 'importmap.rb','application.js', and perhaps something else. Almost.  Seems it is that 'bin/rails *:install'.  'config/initializers/assets.rb' not affected.  
+- [x] 'rails_project_setup.sh' wipes out 'importmap.rb','application.js', and perhaps something else. Almost.  Seems it is thaаt 'bin/rails *:install'.  'config/initializers/assets.rb' not affected.  
 - [x] Redudant 'Picture@url'
   - [x] Remove from `pictures` table
   - [x] Fix tests, models generators actually

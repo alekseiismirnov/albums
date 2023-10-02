@@ -29,14 +29,40 @@
   height: 0.1rem;
   margin: 0auto;
   display: block;
-  background: $primary;
+  margin: 0 auto;
+  background-color: $primary;
 }
 
 .heading-line::after {
   content: "";
   width: 2rem;
+  padding: 0.5rem;
   height: 0.2rem;
   display: block;
   margin-bottom: 1rem;
-  background: $primary;
+  margin: 0 auto;
+  background-color: $primary;
+}
+
+.display-3 { 
+  font-family: 'poppins-regular';
+
+  &--title {
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background-image: linear-gradient(to right, $primary, $secondary);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.boerder-right {
+  boerder-right: 00.1rem solid $gray-300;
 }
