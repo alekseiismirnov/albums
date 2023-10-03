@@ -1,17 +1,12 @@
-<div class="listed_picture">
-  <div id="picture">
-    <%= link_to picture_path picture do %>
-      <%= image_tag picture.file.representation(resize_to_limit: [200, 200]), id: 'main_pic' %>
-    <% end %>
-  </div>
 
-  <div id="tags">
-    <% if picture.tags.empty? %>
-      <p>No tags yet</p>
-    <% else %>
-      <% picture.tags.each do |tag| %>
-        <span id="tag"> <%= tag.name %> </span>
-      <% end %>
-    <% end %>
-  </div>
-</div>
+      <div class="col-lg-4 col-md-6">
+        <div class="portfolio-box shadow text-center">
+            <%= link_to picture_path picture do %>
+            <%= image_tag picture.file.representation(resize_to_limit: [600, 600]), id: 'main_pic', class: 'img-fluid' %>
+            <% end %>
+            <div class="portfolio-info">No tags yet</div>
+        </div>
+      </div>
+
+        
+        
