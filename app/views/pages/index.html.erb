@@ -21,16 +21,18 @@
       </div>
       <div class="col-md-6 intros text-end">
         <div class="video-box">
-        <% if @picture %>
-          <%= image_tag @picture.file, id: 'rescently_uploaded' %>
-        <% else %>
-          <%= image_tag "stub.jpg", id: 'stub' %>
-        <% end %>
-        <%= link_to("#", class: 'glightbox position-absolute top-50 start-50 translate-middle') do %>
-          <span><%= icon('fa-solid', 'play-circle') %></span>
-          <span class="border-animation border-animation--border-1"></span>
-          <span class="border-animation border-animation--border-2"></span>
-        <%end%>
+         <div class="portfolio-box text-center">
+          <% if @picture %>
+            <%= image_tag @picture.file.representation(resize_to_limit: [400, 400]), id: 'rescently_uploaded' %>
+          <% else %>
+            <%= image_tag "stub.jpg", id: 'stub' %>
+          <% end %>
+          <%= link_to("#", class: 'glightbox position-absolute top-50 start-50 translate-middle') do %>
+            <span><%= icon('fa-solid', 'play-circle') %></span>
+            <span class="border-animation border-animation--border-1"></span>
+            <span class="border-animation border-animation--border-2"></span>
+          <%end%>
+        </div>
         </div>
       </div>
     </div>
