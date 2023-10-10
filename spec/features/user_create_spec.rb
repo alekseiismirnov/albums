@@ -12,8 +12,9 @@ feature 'site visitor cat create a user account' do
   it 'can proceed to the registration form and create an account', type: :system  do
     visit root_path
     within '.navbar' do
-      click_on 'Sign Up'
+      click_on 'Sign In'
     end
+    click_on 'Sign up'
 
     fill_in 'Username', with: @user.username
     fill_in 'Email', with: @user.email

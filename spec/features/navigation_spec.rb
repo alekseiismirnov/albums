@@ -16,7 +16,6 @@ feature 'navigation bar' do
       expect(page).to have_http_status :success
       within '.navbar' do
         expect(page).to have_link 'Albums', href: root_path
-        expect(page).to have_link 'Sign Up', href: new_user_registration_path
         expect(page).to have_link 'Sign In', href: new_user_session_path
         expect(page).not_to have_link 'Sign out'
       end
@@ -35,7 +34,6 @@ feature 'navigation bar' do
       within '.navbar' do
         expect(page).to have_link 'Albums', href: root_path
         expect(page).to have_link 'Tags', href: tags_path
-        expect(page).not_to have_link 'Sign Up'
         expect(page).not_to have_link 'Sign In'
         expect(page).to have_link @user.username, href: user_path(@user)
         click_on 'Sign out'
