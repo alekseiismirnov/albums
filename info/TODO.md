@@ -7,7 +7,7 @@
 - [ ] No link on user page from the picture view.
 - [ ] Picture upload w/o validators.
 - [ ] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
-- [ ] Remove the 'Sign Up' link from the navbar
+- [x] Remove the 'Sign Up' link from the navbar
 - [x] Multiply 'No tags yet' on the pics list look annoing.
 - [x] Navbar overlaps and blocks upper part of the page.
 - [x] Add glightbox https://www.csalmeida.com/log/managing-js-and-css-assets-in-rails-7/
