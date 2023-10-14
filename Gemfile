@@ -99,3 +99,5 @@ gem "pry-rails", "~> 0.3.9"
 gem "webrick", "~> 1.8"
 
 gem "font-awesome-sass", "~> 6.4"
+
+gem "solargraph", "~> 0.49.0"
