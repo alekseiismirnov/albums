@@ -1,7 +1,7 @@
 # Image Hosting Site
 
 ## Issues
-
+- [ ] Add `uniqueness: true` to the `Tag`
 - [ ] "Upload one" button on main page is void;
 - [ ] Newly uploaded image doesn't seen on user page without page reload.  Redirect to pic show page?
 - [ ] No link on user page from the picture view.
@@ -12,7 +12,7 @@
 - [x] Navbar overlaps and blocks upper part of the page.
 - [x] Add glightbox https://www.csalmeida.com/log/managing-js-and-css-assets-in-rails-7/
 - [x] Ensure to delete attachment deleting a picture.  Use `destroy`.
-- [x] 'rails_project_setup.sh' wipes out 'importmap.rb','application.js', and perhaps something else. Almost.  Seems it is thaаt 'bin/rails *:install'.  'config/initializers/assets.rb' not affected.  
+- [x] 'rails_project_setup.sh' wipes out `importmap.rb`,`application.js`, and perhaps something else. Almost.  Seems it is thaаt `bin/rails *:install`.  `config/initializers/assets.rb` not affected.  
 - [x] Redudant 'Picture@url'
   - [x] Remove from `pictures` table
   - [x] Fix tests, models generators actually
@@ -52,7 +52,7 @@ Next provided via the `cancancan`:
  - [ ] As a logged user owning the image I want to create and delete its tags
 
 ### Tags Managemnt
- - [ ] As a logged user I want to add new or existing tag to my image
+ - [x] As a logged user I want to add new or existing tag to my image
  - [ ] As a logged user I want to delete a tag from my image
 
 ## Visual Design

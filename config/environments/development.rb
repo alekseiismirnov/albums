@@ -72,5 +72,9 @@ Rails.application.configure do
   config.hosts << 'web'
   config.sass.inline_source_maps = true
   
-  config.web_console.permissions = '10.89.1.10'
+  config.web_console.permissions = '10.0.0.0/8'
+
+  logger = Logger.new(STDOUT)
+  logger.level = Logger::DEBUG
+  config.logger = ActiveSupport::Logger.new("log/#{Rails.env}.log") 
 end

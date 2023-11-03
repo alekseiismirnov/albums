@@ -1,18 +1,27 @@
-<div id="picture">
-  <%= image_tag @picture.file, id: 'main_pic' %>
+<div class="container">
+  <div id="picture">
+    <%= image_tag @picture.file, id: 'main_pic', class: 'img-fluid' %>
+  </div>
 </div>
-
 <div id="tags">
-<% if @picture.tags.empty? %>
-  <p>No tags yet</p>
-<% else %>
-  <% @picture.tags.each do |tag| %>
-    <p id="tag">
-      <%= tag.name %>
-    </p>
+  <%= @picture.tags.inspect %>
+  <% if @picture.tags.empty? %>
+    <p>No tags yet</p>
+  <% else %>
+    <% @picture.tags.each do |tag| %>
+      <p id="tag">
+        <%= tag.name %>
+      </p>
+    <% end %>
   <% end %>
-<% end %>
+  <div id: "new_tab">
+    <%= form_with url: '/tags', method: :post,  data: { turbo: false } do |f|  %>
+      <%= f.hidden_field :picture_id, value: @picture.id %>
+      <%= f.text_field :name %>
+      <%= f.submit '+' %>
+    <% end %>
+  </div>
+</div>
 <% if can? :destroy, @picture %>
   <%= button_to 'Delete!', @picture, method: 'delete' %>
 <% end %>
-</div>

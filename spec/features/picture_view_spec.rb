@@ -4,6 +4,7 @@ feature 'individual picture view' do
   before :all do
     User.delete_all
     Picture.delete_all
+    Tag.delete_all
     ActiveStorage::Attachment.all.each { |attachment| attachment.purge }
     @picture = create(:picture)
   end

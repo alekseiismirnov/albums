@@ -5,7 +5,8 @@ class PicturesController < ApplicationController
   def show ; end
 
   def create
-    pic = current_user.pictures.create!(picture_params)
+    current_user.pictures.create!(picture_params)
+    redirect_to user_path(current_user)
   end
 
   def destroy

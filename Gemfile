@@ -94,10 +94,12 @@ gem "erb_lint", "~> 0.4.0"
 gem "responders", "~> 3.1"
 
 
-gem "pry-rails", "~> 0.3.9"
+gem "pry-remote"
 
 gem "webrick", "~> 1.8"
 
 gem "font-awesome-sass", "~> 6.4"
 
 gem "solargraph", "~> 0.49.0"
+
+gem "jquery-rails", "~> 4.6"
