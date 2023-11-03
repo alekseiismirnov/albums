@@ -49,7 +49,6 @@ Next provided via the `cancancan`:
  - [x] As a visitor I want to see a username of the uploader
  - [x] As a logged user I want to be able to upload new image
  - [x] As a logged user I want to be able to delete my image
- - [ ] As a logged user owning the image I want to create and delete its tags
 
 ### Tags Managemnt
  - [x] As a logged user I want to add new or existing tag to my image
