@@ -1,6 +1,7 @@
 # Image Hosting Site
 
 ## Issues
+- [ ] Tags and add new tag form are not inline
 - [ ] Add `uniqueness: true` to the `Tag`
 - [ ] "Upload one" button on main page is void;
 - [ ] Newly uploaded image doesn't seen on user page without page reload.  Redirect to pic show page?
