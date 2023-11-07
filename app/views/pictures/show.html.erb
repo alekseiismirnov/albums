@@ -1,27 +1,25 @@
 <div class="container">
   <div id="picture">
     <%= image_tag @picture.file, id: 'main_pic', class: 'img-fluid' %>
-  </div>
-</div>
 <div id="tags">
-  <%= @picture.tags.inspect %>
-  <% if @picture.tags.empty? %>
-    <p>No tags yet</p>
-  <% else %>
-    <% @picture.tags.each do |tag| %>
-      <p id="tag">
-        <%= tag.name %>
-      </p>
-    <% end %>
-  <% end %>
-  <div id: "new_tab">
-    <%= form_with url: '/tags', method: :post,  data: { turbo: false } do |f|  %>
-      <%= f.hidden_field :picture_id, value: @picture.id %>
-      <%= f.text_field :name %>
-      <%= f.submit '+' %>
-    <% end %>
+    <%= render(partial: 'shared/listed_tag', collection: @picture.tags, as: :tag) || 'No tags yet' %>
+      <div id="new_tag" class="input-group">
+          <%= form_with url: '/tags', method: :post,  data: { turbo: false } do |f|  %>
+
+              <%= f.hidden_field :picture_id, value: @picture.id %>
+              <%= f.text_field :name, placeholder: 'new tag', size: '10' %>
+
+              <%= button_tag(type: 'submit', class: 'btn btn-sm btn-outline-tertiary', id: 'create_tag') do %>
+                <span><i class="fas fa-plus"></i></span>
+              <% end %>
+
+          <% end %>
+      </div>
+</div>
+    <div class="container clearfix">
+      <% if can? :destroy, @picture %>
+        <%= button_to 'Delete!', @picture, method: 'delete', class: 'btn btn-outline-danger float-end' %>
+      <% end %>
+    </div>
   </div>
 </div>
-<% if can? :destroy, @picture %>
-  <%= button_to 'Delete!', @picture, method: 'delete' %>
-<% end %>

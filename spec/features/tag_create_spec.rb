@@ -17,7 +17,7 @@ feature 'add tag to the picture' do
   
     within('#tags') do
       fill_in('name', with: @new_tag)
-      click_button '+'
+      find('button#create_tag').click
       expect(page).to have_text(@new_tag) 
     end
   end
