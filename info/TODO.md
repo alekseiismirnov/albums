@@ -1,6 +1,7 @@
 # Image Hosting Site
 
 ## Issues
+- [ ] Add tag form should be avaible only for the uploader
 - [ ] Tags and add new tag form are not inline
 - [ ] Add `uniqueness: true` to the `Tag`
 - [ ] "Upload one" button on main page is void;
