@@ -70,8 +70,8 @@ Next provided via the `cancancan`:
   
 ## Functional Spec
  - [x] users: sign up, sign in, sign out
- - [ ] image: CRUD, tag/untag, search by tag
- - [ ] tags: CRUD 
+ - [x] image: CRUD, tag/untag, search by tag
+ - [x] tags: CRD 
  
 ## Classes
  - [x] pictures
