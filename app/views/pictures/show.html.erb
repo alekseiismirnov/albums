@@ -2,7 +2,7 @@
   <div id="picture">
     <%= image_tag @picture.file, id: 'main_pic', class: 'img-fluid' %>
 <div id="tags">
-    <%= render(partial: 'shared/listed_tag', collection: @picture.tags, as: :tag) || 'No tags yet' %>
+    <%= render(partial: 'shared/listed_tag', locals: {picture: @picture}, collection: @picture.tags, as: :tag) || 'No tags yet' %>
       <div id="new_tag" class="input-group">
           <%= form_with url: '/tags', method: :post,  data: { turbo: false } do |f|  %>
 

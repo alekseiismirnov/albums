@@ -1,6 +1,16 @@
-  <span class="badge bg-tertiary" id="tag">
-    <%= link_to tag.name, tag %>
-    <button type="button" class="btn btn-sm btn-outline-tertiary">
-      <i class="fas fa-xmark"></i>
-    </button>
-  </span>
+<span class="badge bg-tertiary d-flex align-items-center" id="tag">
+  <%= link_to tag.name, tag %>
+  <% if can? :update, picture %>
+    <span>
+      <%= button_to '<i class="fas fa-xmark"></i>'.html_safe,
+      picture,
+      html_options: {
+        method: :patch
+      },
+      class: "btn btn-sm btn-outline-tertiary",
+      params: {
+        tag_id: tag.id
+      } %>
+    </span>
+  <% end %>
+</span>

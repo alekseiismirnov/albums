@@ -2,13 +2,13 @@
 
 ## Issues
 - [ ] Add tag form should be avaible only for the uploader
-- [ ] Tags and add new tag form are not inline
 - [ ] Add `uniqueness: true` to the `Tag`
 - [ ] "Upload one" button on main page is void;
 - [ ] Newly uploaded image doesn't seen on user page without page reload.  Redirect to pic show page?
 - [ ] No link on user page from the picture view.
 - [ ] Picture upload w/o validators.
 - [ ] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
+- [ ] Tags and add new tag form are not inline
 - [x] Remove the 'Sign Up' link from the navbar
 - [x] Multiply 'No tags yet' on the pics list look annoing.
 - [x] Navbar overlaps and blocks upper part of the page.
@@ -54,7 +54,7 @@ Next provided via the `cancancan`:
 
 ### Tags Managemnt
  - [x] As a logged user I want to add new or existing tag to my image
- - [ ] As a logged user I want to delete a tag from my image
+ - [x] As a logged user I want to delete a tag from my image
 
 ## Visual Design
  - [ ] Bootstrap styling
