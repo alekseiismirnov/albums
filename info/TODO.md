@@ -8,7 +8,7 @@
 - [ ] No link on user page from the picture view.
 - [ ] Picture upload w/o validators.
 - [ ] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
-- [ ] Tags and add new tag form are not inline
+- [x] Tags and add new tag form are not inline
 - [x] Remove the 'Sign Up' link from the navbar
 - [x] Multiply 'No tags yet' on the pics list look annoing.
 - [x] Navbar overlaps and blocks upper part of the page.
