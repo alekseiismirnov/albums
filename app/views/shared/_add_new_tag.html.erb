@@ -1,0 +1,9 @@
+<div id="new_tag" class="input-group">
+  <%= form_with url: '/tags', method: :post,  data: { turbo: false } do |f| %>
+    <%= f.hidden_field :picture_id, value: picture_id %>
+    <%= f.text_field :name, placeholder: "new tag", size: "10" %>
+    <%= button_tag(type: 'submit', class: 'btn btn-sm btn-outline-tertiary', id: 'create_tag') do %>
+      <span><i class="fas fa-plus"></i></span>
+    <% end %>
+  <% end %>
+</div>

@@ -1,13 +1,13 @@
 # Image Hosting Site
 
 ## Issues
-- [ ] Add tag form should be avaible only for the uploader
 - [ ] Add `uniqueness: true` to the `Tag`
 - [ ] "Upload one" button on main page is void;
 - [ ] Newly uploaded image doesn't seen on user page without page reload.  Redirect to pic show page?
 - [ ] No link on user page from the picture view.
 - [ ] Picture upload w/o validators.
 - [ ] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
+- [x] Add tag form should be avaible only for the uploader
 - [x] Tags and add new tag form are not inline
 - [x] Remove the 'Sign Up' link from the navbar
 - [x] Multiply 'No tags yet' on the pics list look annoing.
@@ -30,7 +30,7 @@
 Next provided via the `cancancan`:
   - [x] Tests https://github.com/CanCanCommunity/cancancan/blob/develop/docs/testing.md
   - [x] User can delete only his upploads
-  - [ ] User can tag only his upploads
+  - [x] User can tag only his upploads
   - [x] Only logged user can upload 
   - [ ] https://guides.rubyonrails.org/active_storage_overview.html#authenticated-controllers
 
