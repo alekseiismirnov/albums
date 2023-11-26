@@ -1,7 +1,8 @@
 # Image Hosting Site
 
 ## Issues
-- [ ] Add `uniqueness: true` to the `Tag`
+- [ ] `uniqueness: true` to the `Tag` name.
+- [ ] Add flashes.
 - [ ] "Upload one" button on main page is void;
 - [ ] Newly uploaded image doesn't seen on user page without page reload.  Redirect to pic show page?
 - [ ] No link on user page from the picture view.
