@@ -58,15 +58,15 @@ Next provided via the `cancancan`:
 
 ## Visual Design
  - [ ] Bootstrap styling
-   - [ ] https://www.youtube.com/watch?v=iJKCj8uAHz8 00:54
-   - [ ] https://bootrails.com/blog/rails-bootstrap-custom-theme/
-   - [ ] Design actually
-   - [ ] Navbar
+   - [x] https://www.youtube.com/watch?v=iJKCj8uAHz8
+   - [x] Navbar
    - [ ] Fix pages:
-      - [ ] Landing
-      - [ ] Pic show
-      - [ ] Tags list and show
-      - [ ] Userpage
+      - [x] Landing
+      - [x] Pic show
+        - [ ] Fix/make links
+      - [ ] Tags list 
+      - [x] Tags show
+      - [x] User page
   
 ## Functional Spec
  - [x] users: sign up, sign in, sign out
@@ -85,7 +85,7 @@ Next provided via the `cancancan`:
     - [x] for logged user: link to user's page, logout
  - [ ] Welcome page, root 
    - [x] stub
-   - [ ] picture example, title 
+   - [x] picture example, title 
    - [ ] search by tag or username
    - [ ] footer
  - [x] Sign in page
@@ -110,4 +110,4 @@ Next provided via the `cancancan`:
    - [x] tags
    - [ ] for logged correspondent user:
     - [x] delete image button
-    - [ ] add/delete tag ability
+    - [x] add/delete tag ability
