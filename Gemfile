@@ -81,7 +81,9 @@ group :development do
   gem "erb_lint", "~> 0.4.0"
   gem 'erb-formatter'
 end
-
+group 'test' do
+  gem 'database_cleaner-active_record'
+end
 gem "importmap-rails", "~> 1.2"
 
 gem "rubocop", "~> 1.54"

@@ -2,6 +2,7 @@
 require 'spec_helper'
 require 'devise'
 require 'capybara/rspec'
+require 'database_cleaner/active_record'
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -22,8 +23,19 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 RSpec.configure do |config|
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.around(:each) do |example|
+    DatabaseCleaner.cleaning do
+      example.run
+    end
+  end
+  
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
-  config.use_transactional_fixtures = true
+  config.use_transactional_fixtures = false
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
   config.before(:each) do 
