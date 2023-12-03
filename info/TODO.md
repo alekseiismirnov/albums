@@ -1,13 +1,13 @@
 # Image Hosting Site
 
 ## Issues
-- [ ] `uniqueness: true` to the `Tag` name.
 - [ ] Add flashes.
 - [ ] "Upload one" button on main page is void;
 - [ ] Newly uploaded image doesn't seen on user page without page reload.  Redirect to pic show page?
 - [ ] No link on user page from the picture view.
 - [ ] Picture upload w/o validators.
 - [ ] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
+- [x] `uniqueness: true` to the `Tag` name.
 - [x] Add tag form should be avaible only for the uploader
 - [x] Tags and add new tag form are not inline
 - [x] Remove the 'Sign Up' link from the navbar

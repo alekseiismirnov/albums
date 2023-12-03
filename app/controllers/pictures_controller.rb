@@ -16,9 +16,23 @@ class PicturesController < ApplicationController
   end
 
   def update
-    @picture.tags.destroy(params[:tag_id])
+    tag_id = params[:tag_id]
+    
+    @picture.tags.destroy(tag_id) if tag_id
+   
+    unless tag_id
+      tag_name = params[:picture][:tag_name]
+      tag = Tag.find_by name: tag_name
+      unless tag
+        @picture.tags.create(name: tag_name)
+      else
+        @picture.tags = @picture.tags | [tag]
+      end
+  
+      @picture.save
+    end
 
-    render :show
+    redirect_to picture_path(@picture)
   end
 
   protected

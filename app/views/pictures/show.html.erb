@@ -11,7 +11,7 @@
         as: :tag
       ) || "No tags yet" %>
       <% if can? :update, @picture %>
-        <%= render(partial: "shared/add_new_tag", locals: { picture_id: @picture.id }) %>
+        <%= render(partial: "shared/add_new_tag", locals: { picture: @picture }) %>
       <% end %>
 
     </div>

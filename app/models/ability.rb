@@ -5,6 +5,7 @@ class Ability
 
   def initialize(user)
     can :read, Picture
+    can :read, Tag
 
     return unless user.present?
     
