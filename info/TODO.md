@@ -1,6 +1,7 @@
 # Image Hosting Site
 
 ## Issues
+- [ ] User's page is used as a pics browser option, not as user cabinet only, this features have to be separated;
 - [ ] "Upload one" button on main page is void;
 - [ ] No link on user page from the picture view.
 - [ ] Picture upload w/o validators.
