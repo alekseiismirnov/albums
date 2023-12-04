@@ -1,4 +1,5 @@
 <div class="container">
+  <p>Upploaded by: <%= link_to @picture.user.username, user_path(@picture.user) %>
   <div id="picture">
     <%= image_tag @picture.file, id: "main_pic", class: "img-fluid" %>
     <div id="tags">

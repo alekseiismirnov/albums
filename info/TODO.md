@@ -3,8 +3,8 @@
 ## Issues
 - [ ] User's page is used as a pics browser option, not as user cabinet only, this features have to be separated;
 - [ ] "Upload one" button on main page is void;
-- [ ] No link on user page from the picture view.
 - [ ] Picture upload w/o validators.
+- [x] No link on user page from the picture view.
 - [x] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
 - [x] Add flashes.
 - [x] `uniqueness: true` to the `Tag` name.
