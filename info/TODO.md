@@ -2,7 +2,6 @@
 
 ## Issues
 - [ ] "Upload one" button on main page is void;
-- [ ] Newly uploaded image doesn't seen on user page without page reload.  Redirect to pic show page?
 - [ ] No link on user page from the picture view.
 - [ ] Picture upload w/o validators.
 - [ ] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
@@ -61,6 +60,7 @@ Next provided via the `cancancan`:
  - [ ] Bootstrap styling
    - [x] https://www.youtube.com/watch?v=iJKCj8uAHz8
    - [x] Navbar
+   - [ ] Login page
    - [ ] Fix pages:
       - [x] Landing
       - [x] Pic show
