@@ -6,4 +6,6 @@
   </div>
 </section>
 
-<%= render partial: 'shared/pic_upload_form' %>
+<% if user_signed_in?  %>
+  <%= render partial: 'shared/pic_upload_form' %>
+<% end %>

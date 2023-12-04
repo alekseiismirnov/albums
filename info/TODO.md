@@ -4,7 +4,7 @@
 - [ ] "Upload one" button on main page is void;
 - [ ] No link on user page from the picture view.
 - [ ] Picture upload w/o validators.
-- [ ] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
+- [x] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
 - [x] Add flashes.
 - [x] `uniqueness: true` to the `Tag` name.
 - [x] Add tag form should be avaible only for the uploader
