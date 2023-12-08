@@ -3,6 +3,7 @@ require 'spec_helper'
 require 'devise'
 require 'capybara/rspec'
 require 'database_cleaner/active_record'
+require 'active_storage_validations/matchers'
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -31,6 +32,7 @@ RSpec.configure do |config|
     ActiveStorage::Attachment.all.each { |attachment| attachment.purge }
   end
 
+  config.include ActiveStorageValidations::Matchers
   config.include Devise::Test::IntegrationHelpers, type: :feature
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Devise::Test::IntegrationHelpers, type: :request

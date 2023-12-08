@@ -92,10 +92,7 @@ gem "devise", "~> 4.9"
 
 gem "cancancan", "~> 3.5"
 
-
-
 gem "responders", "~> 3.1"
-
 
 gem "pry-remote"
 
@@ -106,3 +103,5 @@ gem "font-awesome-sass", "~> 6.4"
 gem "solargraph", "~> 0.49.0"
 
 gem "jquery-rails", "~> 4.6"
+
+gem "active_storage_validations", "~> 1.1"
