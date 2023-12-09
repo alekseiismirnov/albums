@@ -101,15 +101,15 @@ Next provided via the `cancancan`:
    - [ ] thumbnails with username
    - [ ] search by tags or username
  - [x] User page:
-   - [ ] title: username
+   - [x] title: username
    - [x] thumbnails
    - [ ] search by tags or username
    - [x] for logged correspondent user:
     - [x] uppload button 
- - [ ] Picture page:
+ - [x] Picture page:
    - [x] image, full size
    - [x] username, link to user's page
    - [x] tags
-   - [ ] for logged correspondent user:
+   - [x] for logged correspondent user:
     - [x] delete image button
     - [x] add/delete tag ability
