@@ -84,6 +84,7 @@ end
 group 'test' do
   gem 'database_cleaner-active_record'
 end
+
 gem "importmap-rails", "~> 1.2"
 
 gem "rubocop", "~> 1.54"
@@ -105,3 +106,7 @@ gem "solargraph", "~> 0.49.0"
 gem "jquery-rails", "~> 4.6"
 
 gem "active_storage_validations", "~> 1.1"
+
+gem "bootstrap_form", "~> 5.4"
+
+gem "devise-bootstrap-form", "~> 0.3.0"

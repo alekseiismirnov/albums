@@ -61,7 +61,7 @@ Next provided via the `cancancan`:
  - [ ] Bootstrap styling
    - [x] https://www.youtube.com/watch?v=iJKCj8uAHz8
    - [x] Navbar
-   - [ ] Login page
+   - [x] Login and sign up pages
    - [ ] Fix pages:
       - [x] Landing
       - [x] Pic show

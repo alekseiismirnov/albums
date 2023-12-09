@@ -93,6 +93,9 @@ GEM
       autoprefixer-rails (>= 9.1.0)
       popper_js (>= 2.11.6, < 3)
       sassc-rails (>= 2.0.0)
+    bootstrap_form (5.4.0)
+      actionpack (>= 6.1)
+      activemodel (>= 6.1)
     builder (3.2.4)
     cancancan (3.5.0)
     capybara (3.39.2)
@@ -123,6 +126,10 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-form (0.3.0)
+      bootstrap_form (>= 4.0.0.alpha1)
+      devise (>= 4.6.0)
+      rails (>= 5.0.0)
     diff-lcs (1.5.0)
     e2mmap (0.1.0)
     erb-formatter (0.4.3)
@@ -417,12 +424,14 @@ DEPENDENCIES
   active_storage_validations (~> 1.1)
   bootsnap
   bootstrap (~> 5.2.0)
+  bootstrap_form (~> 5.4)
   cancancan (~> 3.5)
   capybara
   cssbundling-rails
   database_cleaner-active_record
   debug
   devise (~> 4.9)
+  devise-bootstrap-form (~> 0.3.0)
   erb-formatter
   erb_lint (~> 0.4.0)
   factory_bot_rails
