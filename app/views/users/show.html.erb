@@ -1,7 +1,7 @@
 <section id="listed-pictures" class="portfolio listed_pictures">
   <div class="container">
     <div class="row pictures_list">
-      <%= render(partial: 'shared/listed_picture', collection: @user.pictures, as: :picture) || 'No pictures yet' %>
+      <%= render(partial: 'shared/listed_picture', collection: @user.pictures, as: :picture, locals: {limit: 500}) || 'No pictures yet' %>
     </div>
   </div>
 </section>

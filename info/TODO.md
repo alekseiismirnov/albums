@@ -3,6 +3,8 @@
 ## Issues
 - [ ] User's page is used as a pics browser option, not as user cabinet only, this features have to be separated;
 - [ ] "Upload one" button on main page is void;
+- [x] "Most liked pics" stub on the main page;
+- [x] Tags and users stubs on the main page;
 - [x] Picture upload w/o validators. gem 'file_validators'
 - [x] No link on user page from the picture view.
 - [x] Picture upload button is seen for the unloged user.  Asks for the authorization thought.
@@ -65,7 +67,7 @@ Next provided via the `cancancan`:
    - [ ] Fix pages:
       - [x] Landing
       - [x] Pic show
-        - [ ] Fix/make links
+        - [x] Fix/make links
       - [ ] Tags list 
       - [x] Tags show
       - [x] User page

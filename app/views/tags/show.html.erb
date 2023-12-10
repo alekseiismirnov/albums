@@ -1,3 +1,3 @@
 <div class="pictures_list">
-  <%= render(partial: 'shared/listed_picture', collection: @pictures, as: :picture) || 'No pictures yet' %>
+  <%= render(partial: 'shared/listed_picture', collection: @pictures, as: :picture, locals: {limit: 500}) || 'No pictures yet' %>
 </div>
