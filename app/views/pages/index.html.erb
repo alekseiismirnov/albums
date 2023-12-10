@@ -10,13 +10,18 @@
             the image hosting service
           </span>
         </h1>
-        <button type="button" class="rounded-pill btn-rounded">
-          Upload one
-          <span>
-            <%= icon("fa-solid", "upload") %>
-          </span>
-        </button>
-
+        <form>
+          <button
+            type="submit"
+            formaction="<%= current_user ? user_path(current_user) : new_user_session_path %>"
+            class="rounded-pill btn-rounded"
+          >
+            Upload one
+            <span>
+              <%= icon("fa-solid", "upload") %>
+            </span>
+          </button>
+        </form>
       </div>
       <div class="col-md-6 intros text-end">
         <div class="video-box">
