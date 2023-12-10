@@ -2,7 +2,7 @@
 
 ## Issues
 - [ ] User's page is used as a pics browser option, not as user cabinet only, this features have to be separated;
-- [ ] "Upload one" button on main page is void;
+- [x] "Upload one" button on main page is void;
 - [x] "Most liked pics" stub on the main page;
 - [x] Tags and users stubs on the main page;
 - [x] Picture upload w/o validators. gem 'file_validators'
